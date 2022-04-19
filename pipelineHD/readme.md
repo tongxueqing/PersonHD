@@ -68,7 +68,7 @@ Tong X,Song C,Zhang Z. “PersonHD: Towards High Definition Person Image Generat
 Acknowledgement
 ---
 Our code is partially based on 
-,[SPGNet](https://github.com/cszy98/SPGNet "悬停显示"),and [C2-Matching](https://github.com/yumingj/C2-Matching "悬停显示"). We thank the authors for sharing their code.
+,[SPGNet](https://github.com/cszy98/SPGNet "悬停显示") and [C2-Matching](https://github.com/yumingj/C2-Matching "悬停显示"). We thank the authors for sharing their code.
 
 Contact
 ---
