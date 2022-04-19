@@ -1,0 +1,45 @@
+name: C2_matching_gan_front_512_jitter_unresize1
+suffix: ~  # add suffix to saved images
+scale: 2
+model_type: RefRestorationModel
+set_CUDA_VISIBLE_DEVICES: ~
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [2]
+
+datasets:
+  test_1:  # the 1st test dataset
+    name: personHD
+    type: Ref_PersonHD_unsize_Dataset
+    dataroot_in: /data2/xueqing_tong/codes/SPGNet/checkpoints/PoseTransfer_personHD_2e5_front_jitter/output_8
+    dataroot_ref: /data2/xueqing_tong/dataset/cropped_front/resize512/test
+    dataroot_gt: /data2/xueqing_tong/dataset/cropped_front/resize512/test
+    io_backend:
+      type: disk
+
+    bicubic_model: PIL
+
+    ann_file: test_2e5_front.txt
+
+val_func: BasicSRValidation
+save_img: true
+
+#### network structures
+network_g:
+  type: RestorationNet512
+  ngf: 64
+  n_blocks: 16
+  groups: 8
+network_map:
+  type: CorrespondenceGenerationArch
+  patch_size: 3
+  stride: 1
+  vgg_layer_list: ['relu1_1', 'relu2_1', 'relu3_1']
+  vgg_type: 'vgg19'
+network_extractor:
+  type: ContrasExtractorSep
+
+#### path
+path:
+  pretrain_model_g: ./experiments/stage3_restoration_gan_personHD_front_512_unresize1_jitter/models/net_g_85000.pth
+  pretrain_model_feature_extractor: ./pretrained_models/feature_extraction.pth
+  strict_load: true

@@ -1,0 +1,2 @@
+python mmsr/train.py -opt "options/train_personHD_512_unresize1/stage3_restoration_gan_front_512.yml"
+python mmsr/train.py -opt "options/train_personHD_512_unresize1/stage3_restoration_gan_side_512.yml"
