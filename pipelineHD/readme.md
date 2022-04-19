@@ -2,21 +2,25 @@ Model Zoo
 ---
 path:checkpoints/FlowReg/
 best_net_netF.pth
+
 链接：https://pan.baidu.com/s/1-gP8oI8iqk9xScriPpbUDA 
 提取码：6mjw
 
 path:checkpoints/PoseTransfer_personHD_finetune_jitter_2e5_front
 40_net_netG.pth
+
 链接：https://pan.baidu.com/s/1Ocgb0ICu5w85zlAOxGjXFg 
 提取码：pma6
 
 path:upsample_pretrained_model
 feature_extraction.pth
+
 链接：https://pan.baidu.com/s/182Lsfici6y6tPffxXJFOKQ 
 提取码：gr9t
 
 path:upsample_experiments/stage3_restoration_gan_personHD_front_512_unresize1_finetune
 net_g_100000.pth
+
 链接：https://pan.baidu.com/s/1hq1qwwvQfy3_HsFsjHCB0g 
 提取码：zpvv
 
