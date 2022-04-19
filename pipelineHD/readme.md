@@ -1,3 +1,19 @@
+Installation
+---
+Prerequisites
+```bash
+- python3.7
+- pytorch1.4.0 + torchvision0.4.0
+- numpy
+- opencv
+- tqdm
+--mmcv==0.4.4
+```
+
+Data Preparation
+---
+contach us to get the PersonHD data
+
 Model Zoo
 ---
 path:checkpoints/FlowReg/
