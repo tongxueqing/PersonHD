@@ -1,3 +1,4 @@
+Dataset release：
 PersonHD: A High-Difinition and Large-Scale Person Image Dataset
 Dataset release :
 A high-definition  person image dataset that contains 4000 videos (4000 =100id*20 Action*2 view ) with 299K frames,which collected in 2019 for the Pose-guided person generation task. The data can be obtained by sending an email to me (tongxueqing2020@ia.ac.cn) via an official email (not use qq, gmail, etc.) including your institution/company information and the purpose on the dataset.
