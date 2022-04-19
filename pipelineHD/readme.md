@@ -28,7 +28,7 @@ net_g_100000.pth
 Inference 
 ---
 
-After training, to test with default setting, simply run:
+Test with default setting, simply run:
 
 ```bash
 #first stage
@@ -61,9 +61,15 @@ train_personHD_upsampling.sh
 
 
 Citation
+---
 Please consider citing our paper in your publications if the project helps your research.
 Tong X,Song C,Zhang Z. “PersonHD: Towards High Definition Person Image Generation” Under review.
 
 Acknowledgement
-Our code is partially based on Pose-Transfer
-,SPGNet,and C2-Matching. We thank the authors for sharing their code.
+---
+Our code is partially based on 
+,[SPGNet](https://github.com/cszy98/SPGNet "悬停显示"),and [C2-Matching](https://github.com/yumingj/C2-Matching "悬停显示"). We thank the authors for sharing their code.
+
+Contact
+---
+If you have any question, please feel free to contact us via tongxueqing2020@ia.ac.cn
