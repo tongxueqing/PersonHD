@@ -1,5 +1,7 @@
 Usage
+
 Training
+
 The pipeline consist of two stages, the pose transfer method and conditioned upsampling method. We utilize SPGNet as the baseline method of pose transfer.  We utilize c2_matching as the conditioned upsampling method. 
 
 first stage
@@ -11,6 +13,7 @@ train_personHD_upsampling.sh
 
 
 Test
+
 After training, to test with default setting, simply run:
 first stage
 bash test_personHD.sh
